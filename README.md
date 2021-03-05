@@ -49,7 +49,7 @@ For example one test could be a SQL statement that checks if certain column cont
 
 In the end, you will have a DAG looks like the one below: 
 
-![DAG](DAG.jpg)
+![DAG](dag.png)
 
 ## Instruction 
 
