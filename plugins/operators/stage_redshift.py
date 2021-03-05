@@ -12,7 +12,7 @@ class StageToRedshiftOperator(BaseOperator):
         FROM '{}'
         ACCESS_KEY_ID '{}'
         SECRET_ACCESS_KEY '{}'
-        JSON '{}'
+        FORMAT AS json'{}'
     """
     
 
@@ -61,7 +61,7 @@ class StageToRedshiftOperator(BaseOperator):
             s3_json_path
         )
         redshift.run(formatted_table)
-
+        self.log.info(f"Table {self.table} has been staged.")
 
 
 
